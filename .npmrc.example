@@ -1,0 +1,3 @@
+@playmobility:registry=https://YOUR_INSTANCE.jfrog.io/artifactory/api/npm/npm-virtual/
+//YOUR_INSTANCE.jfrog.io/artifactory/api/npm/npm-virtual/:_authToken=${ARTIFACTORY_TOKEN}
+always-auth=true

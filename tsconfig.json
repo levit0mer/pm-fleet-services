@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@playmobility/shipping-core": ["packages/shipping-core/src"],
+      "@playmobility/rate-engine": ["packages/rate-engine/src"],
+      "@playmobility/tracking-utils": ["packages/tracking-utils/src"]
+    }
+  },
+  "references": [
+    { "path": "packages/shipping-core" },
+    { "path": "packages/rate-engine" },
+    { "path": "packages/tracking-utils" }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "pm-fleet-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shared packages for PlayMobility's fleet services platform",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "test": "jest --config jest.config.js",
+    "lint": "eslint 'packages/*/src/**/*.ts'",
+    "clean": "rimraf packages/*/dist",
+    "validate": "npm run lint && npm run build && npm run test"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "glob": "^10.4.5",
+    "lodash": "^4.17.21",
+    "pino": "^9.2.0",
+    "rimraf": "^5.0.10",
+    "semver": "^7.6.3",
+    "@playmobility/geo-utils": "https://github.com/levit0mer/playmobility-geo-utils/releases/download/playmobility-geo-utils-1.2.0/playmobility-geo-utils-1.2.0.tgz",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.3",
+    "typescript": "^5.5.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
