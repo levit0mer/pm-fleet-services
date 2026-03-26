@@ -1,0 +1,15 @@
+{
+  "name": "@playmobility/rate-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shipping rate calculation engine",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@playmobility/shipping-core": "1.0.0",
+    "axios": "^1.7.2"
+  }
+}

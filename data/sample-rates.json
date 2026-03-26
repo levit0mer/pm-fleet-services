@@ -1,0 +1,34 @@
+{
+  "description": "Sample rate comparison for Austin TX to Denver CO shipments",
+  "generated": "2026-03-10T14:30:00Z",
+  "shipments": [
+    {
+      "id": "SHIP-001",
+      "origin": { "city": "Austin", "state": "TX", "zipCode": "78701" },
+      "destination": { "city": "Denver", "state": "CO", "zipCode": "80202" },
+      "packages": [
+        { "lengthIn": 12, "widthIn": 8, "heightIn": 6, "weightLbs": 5.2 }
+      ],
+      "requestedService": "ground"
+    },
+    {
+      "id": "SHIP-002",
+      "origin": { "city": "Austin", "state": "TX", "zipCode": "78701" },
+      "destination": { "city": "Seattle", "state": "WA", "zipCode": "98101" },
+      "packages": [
+        { "lengthIn": 18, "widthIn": 14, "heightIn": 10, "weightLbs": 12.8 },
+        { "lengthIn": 8, "widthIn": 6, "heightIn": 4, "weightLbs": 2.1 }
+      ],
+      "requestedService": "express"
+    },
+    {
+      "id": "SHIP-003",
+      "origin": { "city": "Austin", "state": "TX", "zipCode": "78701" },
+      "destination": { "city": "New York", "state": "NY", "zipCode": "10001" },
+      "packages": [
+        { "lengthIn": 24, "widthIn": 18, "heightIn": 12, "weightLbs": 22.5 }
+      ],
+      "requestedService": "overnight"
+    }
+  ]
+}
