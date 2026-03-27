@@ -1,6 +1,6 @@
 # pm-fleet-services
 
-Shared packages for PlayMobility's fleet services platform.
+Stripped-down version of our internal fleet services monorepo, put together to reproduce a `jfrog-cli` build-info issue with npm workspaces.
 
 ## Packages
 
@@ -10,12 +10,14 @@ Shared packages for PlayMobility's fleet services platform.
 | `@playmobility/rate-engine` | Multi-carrier rate calculation |
 | `@playmobility/tracking-utils` | Tracking event parsing and aggregation |
 
-## Setup
+## Reproduce
 
 ```bash
+git clone https://github.com/levit0mer/pm-fleet-services.git
+cd pm-fleet-services
 npm install
-npm run build
-npm test
+npm run build && npm test
+jf npm install --build-name=test-build --build-number=1
 ```
 
 ## Structure
